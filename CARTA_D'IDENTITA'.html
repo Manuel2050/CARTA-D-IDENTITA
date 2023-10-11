@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>CARTA D'IDENTITA'</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+    <div class="carta-identita">
+        <div class="nomecarta">
+            <h1>Carta d'Identità</h1>
+        </div>
+                <div id="nome">
+                <p>Nome:</p>
+                </div>
+                <div id="cognome">
+                <p>Cognome:</p>
+                </div>  
+                <div id="sesso">
+                <p>Sesso:</p>
+                </div>
+                <div id="data_di_nascita">
+                <p>Data di nascita:</p>
+                </div>
+                <div id="luogo_di_nascita">
+                <p>Luogo di nascita:</p>
+                </div>
+                <div id="residenza">
+                <p>Luogo di residenza:</p>
+                </div>
+                <p>Foto identificativa:</p>
+                <p style="text-align: center;"><img src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/11/2019/01/morto-boo-il-cane-famoso-del-mondo-instagram-1200x675.jpg" alt="Foto_Profilo" style="width: 150px; height: 100px;"></p>
+            </object>
+        </div>
+    </div>
+    <script>
+        fetch('./CARTA.json')
+        .then((response) => response.json())
+            .then((json) => {
+                console.log(json);
+                document.getElementById("nome").innerHTML=json.nome;
+                document.getElementById("cognome").innerHTML=json.cognome;
+                document.getElementById("sesso").innerHTML=json.sesso;
+                document.getElementById("data_di_nascita").innerHTML=json.data_nascita;
+                document.getElementById("luogo_di_nascita").innerHTML=json.luogo_nascita;
+                document.getElementById("residenza").innerHTML=json.residenza;
+        });
+
+    </script>
+</body>
+</html>
+
+

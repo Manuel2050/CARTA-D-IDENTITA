@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.carta-identita {
+    background-color: blue;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+}
+
+#dati-identita p {
+    margin: 10px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.nomecarta {
+    width: 300px;
+    height: 150px;
+    background-color: #3498db;
+    color: #ffffff; 
+    text-align: center;
+    line-height: 150px;
+}
